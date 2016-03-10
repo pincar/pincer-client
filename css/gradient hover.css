@@ -1,0 +1,33 @@
+nav ul li a{display:block;padding:0 30px;height:50px;line-height:50px;font-size:15px;color:#fff;text-shadow:0 1px 0 #387031;}
+nav ul li a:hover{background:#5fae53;}
+
+
+
+<style>
+h1
+{
+border-right:1px solid #336c2b;border-left:1px solid #78c368;
+display:block;padding:0 30px;height:50px;line-height:50px;font-size:15px;color:#fff;text-shadow:0 1px 0 #387031;
+-moz-border-radius:30px;
+border-radius:30px;
+background-color:#3b7c33;
+background-image:-webkit-gradient(linear,0% 0%,0% 100%,from(#5fae53),to(#3b7c33));
+background-image:-webkit-linear-gradient(top,#5fae53,#3b7c33);
+background-image:-moz-linear-gradient(top,#5fae53,#3b7c33);
+background-image:-ms-linear-gradient(top,#5fae53,#3b7c33);
+background-image:-o-linear-gradient(top,#5fae53,#3b7c33);
+}
+
+<!--display:inline-flex;	flex-basis:150px;-->
+	
+	<!---webkit-linear-gradient(top,#5fae53,#3b7c33)-->
+<!--background-color:#3b7c33;-->
+#publishbutton {
+    <!--align-self: center;
+    display:flex;
+	display:-webkit-flex;
+	flex-direction: row;
+    justify-content:center;
+	border: solid 1px red;-->
+}
+</style>

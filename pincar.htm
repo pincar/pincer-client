@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=yes,initial-scale=1,minimum-scale=1,maximum-scale=2,">
+<link rel="stylesheet" href="css/car.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/pincar.js"></script>
+<body onload="whenPageLoad()">
+    <div id="home" class="pincarBox">
+	<header></header>
+	<nav></nav>
+	<section></section><aside></aside>
+	<footer><div id="btnPanel"><input class="homebtn" type="button" value="找人" onclick="goToFindPassenger()"></input><input class="homebtn" type="button" value="搭车" onclick="goToFindCar()"></input></div></footer>
+
+	</div>
+    <div id="findCarBox" class="pincarBox">
+	<header><h1>找车</h1></header>
+	<nav></nav>
+	<section>
+		<form id="findCarForm" action="#" method="post">
+			<div class="inputAddon">
+				<span class="label">出发地</span>
+				<input class="inputAddon-field" type="text" name="startPoint"></input>
+			</div>
+			<div class="inputAddon">
+				<span class="label">目的地</span>
+				<input class="inputAddon-field" type="text" name="destination"></input>
+			</div>
+			<div class="inputAddon">
+				<span class="label">出发时间</span>
+				<input class="inputAddon-field" type="text" name="estimatetime"></input>
+			</div> 			
+			<div id="findbutton"><input type="button" value="查询" onclick="return findChar();"></input></div>
+		</form>
+        <section class="list">
+		    <div></div>
+		</section>	    
+	</section><aside></aside>
+	<footer></footer>
+	</div>
+	<div id="publishCarServiceBox" class="pincarBox">
+	<header>发布信息</header>
+	<nav></nav>
+	<section>
+		<form id="publishCarServiceForm" action="#" method="post">
+			<div class="inputAddon">
+				<span class="label">车主</span>
+				<input class="inputAddon-field" type="text" name="driver"></input>
+			</div>
+			<div class="inputAddon">
+				<span class="label">车型</span>
+				<input class="inputAddon-field" type="text" name="cartype"></input>
+			</div>
+			<div class="inputAddon">
+				<span class="label">联系电话</span>
+				<input class="inputAddon-field" type="text" name="mobileNo"></input>
+			</div>
+			<div class="inputAddon">
+				<span class="label">起始点</span>
+				<input class="inputAddon-field" type="text" name="startPoint"></input>
+			</div>
+            <div class="inputAddon">
+				<span class="label">终点</span>
+				<input class="inputAddon-field" type="text" name="destination"></input>
+			</div> 	
+			<div class="inputAddon">
+				<span class="label">空位数</span>
+				<input class="inputAddon-field" type="text" name="remainderSeatNum"></input>
+			</div>
+			<div class="inputAddon">
+				<span class="label">男女</span>
+				<select class="inputAddon-field selectOp" name="sex" size="1">
+					<option value="0" selected>不限</option>				
+					<option value ="1">女</option>  
+					<option value ="2">男</option>
+				</select>				
+			</div>		
+			<div id="publishbutton"><input type="button" value="发布" onclick="return publishCarService();"></input></div>
+		</form>    
+	</section><aside></aside>
+	<footer></footer>
+	</div>
+	<div id="driverPublishedMsgBox" class="pincarBox" >
+		<header>已发布信息</header>
+		<nav></nav>
+		<section>
+			<table id="driverMsgList" class="pinCarList">
+				<caption></caption> 
+				<thead>
+					<tr>
+						<th name="nickname">昵称</th>
+						<th name="startPoint">起始点</th>
+						<th name="destination">终点</th>
+						<th name="time">发车时间</th>
+						<th name="mobileNo">联系电话</th>
+						<th name="edit">修改</th>
+						<th name="cancel">取消</th>
+					</tr>
+				</thead>
+				<tbody>					
+				</tbody>			
+			</table>    
+		</section><aside></aside>
+		<footer></footer>
+	</div>
+	<div id="carListMsgBox" class="pincarBox">
+		<header>车子信息</header>
+		<nav></nav>
+		<section>
+			<table id="carMsgList" class="pinCarList">
+				<caption></caption> 
+				<thead>
+					<tr>
+						<th name="nickname">昵称</th>
+						<th name="startPoint">起始点</th>
+						<th name="destination">终点</th>
+						<th name="time">发车时间</th>
+						<th name="mobileNo">联系电话</th>
+						<th name="brand">车型</th>
+						<th name="verticallicense">车牌</th>
+						<th name="color">颜色</th>
+						<th name="totalSeatNum">座位数</th>
+						<th name="remainderSeatNum">空位数</th>
+						<th name="status">状态</th>
+					</tr>
+				</thead>
+				<tbody>					
+				</tbody>			
+			</table>    
+		</section><aside></aside>
+		<footer></footer>
+	</div>
+</body>
+</html>

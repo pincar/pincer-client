@@ -1,0 +1,78 @@
+body {
+    display:flex;
+	display:-webkit-flex;
+    flex-direction: column;
+    min-height: 100vh;
+	justify-content:flex-start;
+	align-items:center;
+}
+
+#pincarBox {	
+	display:flex;
+	display:-webkit-flex;
+    flex-direction: column;
+    min-height: 100vh;
+	justify-content:flex-start;
+	align-items:center;
+	flex:1;
+}
+section {
+    display:flex;
+	display:-webkit-flex;
+    flex:1;
+	flex-direction: column;
+}
+
+form {
+    display:flex;
+	display:-webkit-flex;
+	flex-direction: column;
+    justify-content:flex-start;
+	align-items:flex-start;	
+}
+.inputAddon {
+    display: flex;
+	display: -webkit-flex;
+	flex-direction: row;	
+	margin-bottom:5px;   	
+}
+
+.label {  
+  flex:0 0 6em;
+  self-align: flex-start;
+}
+
+.inputAddon-field {
+    flex:1;
+}
+
+.selectOp {
+    flex-basis:150px;
+	width: 150px;
+}
+
+
+input[type="button"] {
+	width: 150px;
+	height:50px;
+	-moz-border-radius:30px;
+border-radius:20px;
+background-image:-webkit-linear-gradient(top,#f6f6f6,#f0f0f0);
+background-image:-moz-linear-gradient(top,#f6f6f6,#ffffff);
+background-image:-o-linear-gradient(top,#f6f6f6,#ffffff);
+}
+
+
+input[type="button"]:hover{background:#e8e8e8;}
+
+
+table {	
+	 border-collapse: collapse;
+}
+table td, table th{border-width: 1px;border-style: solid;padding:1px;}
+table th{border-color: #a9c6c9;background-color:#d4e3e5;}
+footer {
+   display:flex;
+   display:-webkit-flex;
+   justify-content:center;
+}
