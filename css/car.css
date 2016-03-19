@@ -1,8 +1,7 @@
 body {
     display:flex;
 	display:-webkit-flex;
-    flex-direction: column;
-    min-height: 100vh;
+    flex-direction: column;    
 	justify-content:flex-start;
 	align-items:center;
 }
@@ -10,8 +9,7 @@ body {
 #pincarBox {	
 	display:flex;
 	display:-webkit-flex;
-    flex-direction: column;
-    min-height: 100vh;
+    flex-direction: column;    
 	justify-content:flex-start;
 	align-items:center;
 	flex:1;

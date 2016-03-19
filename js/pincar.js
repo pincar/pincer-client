@@ -120,8 +120,10 @@ function publishCarService() {
 	pubCarServReq.remainderSeatNum=;*/
 	//var servDetail={driver:$("#publishCarServiceBox input[name='driver']").val()};
 	//alert(string(servDetail.driver));
-	/*var pubCarServReq = $("#publishCarServiceForm").serializeJson();
-	pubCarServReq.userId = $("body").data("userToken").userId;
+	//var pubCarServReq = $("#publishCarServiceForm").serializeJson();
+	var pubCarServReq =$("#publishCarServiceForm").serializeJson();
+	//$("#publishCarServiceForm select[name='cartype']").val();
+	/*pubCarServReq.userId = $("body").data("userToken").userId;
 	$.ajax({
 		url:"/zhaoren",
 		data:pubCarServReq,
